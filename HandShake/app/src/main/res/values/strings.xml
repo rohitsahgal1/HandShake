@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HandShake</string>
+    <string name="title_activity_main">HandShake</string>
+    <string name="tab_text_1">Chats</string>
+    <string name="tab_text_2">Search</string>
+    <string name="tab_text_3">Create</string>
+</resources>

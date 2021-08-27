@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@color/transparent2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/backgroundColor1">
+
+        <ImageView
+            android:id="@+id/groupPopup_dpImageView"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Dp is Mandatory for creating a Group"
+        android:textColor="#FF5D5D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+    <EditText
+        android:id="@+id/groupPopup_nameEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:maxLines="1"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:hint="Group Name"
+        android:background="@drawable/login_edittext_design"
+        android:textSize="14dp"
+        android:textColorHint="@color/textColor3"
+        android:textColor="@color/textColor2"
+        />
+
+    <EditText
+        android:id="@+id/groupPopup_rangeEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupPopup_nameEditText"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:hint="Range in Meter"
+        android:background="@drawable/login_edittext_design"
+        android:textSize="14dp"
+        android:inputType="number"
+        android:textColorHint="@color/textColor3"
+        android:textColor="@color/textColor2"/>
+
+    <EditText
+        android:id="@+id/groupPopup_descriptionEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupPopup_rangeEditText"
+        android:minLines="3"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:hint="Group Description"
+        android:background="@drawable/login_edittext_design"
+        android:textSize="14dp"
+        android:textColorHint="@color/textColor3"
+        android:textColor="@color/textColor2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/groupPopup_createOrUpdateButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create"
+        android:textColor="@color/textColor2"
+        android:enabled="false"
+        android:background="@drawable/button_design_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupPopup_descriptionEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

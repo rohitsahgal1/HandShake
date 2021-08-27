@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/groupDpImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flag_bhutan"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dp is Mandatory for creating a Group"
+        android:textColor="#FF5D5D"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupNameEditText"
+        android:hint="Group Name"
+        android:background="@drawable/login_edittext_design"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionEditText"
+        android:hint="Description of the group"
+        android:lines="3"
+        android:background="@drawable/login_edittext_design"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createGroupButton"
+        android:text="Create"
+        android:elevation="15dp"
+        />
+
+
+</LinearLayout>
