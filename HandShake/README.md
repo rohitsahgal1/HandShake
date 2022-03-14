@@ -1,2 +1,0 @@
-# HandShake
- Location Based Community
